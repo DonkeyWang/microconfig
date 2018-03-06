@@ -1,0 +1,26 @@
+spring:
+    profiles:
+        active:
+        - dev
+---
+server:
+    port: 8201
+spring:
+    profiles: dev
+    application:
+        name: microconfig-test-dev
+eureka:
+  client: 
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka-7001.com:7001/eureka
+---
+server:
+    port: 8102
+spring:
+    profiles: default
+    application:
+        name: microconfig-test-default
+eureka:
+  client: 
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka-7001.com:7001/eureka
