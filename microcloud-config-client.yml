@@ -17,10 +17,11 @@ eureka:
 server:
     port: 8102
 spring:
-    profiles: default
+    profiles: beta
     application:
         name: microconfig-test-default
 eureka:
   client: 
     service-url:
       defaultZone: http://edmin:mldnjava@eureka-7001.com:7001/eureka
+      
